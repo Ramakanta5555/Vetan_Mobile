@@ -1,0 +1,17 @@
+Testcases/DeclarationDeductionPageTest.class
+PageObject/DeclarationDeductionPage.class
+Testcases/DeclarationAllowancesPageTest.class
+Testcases/DocumentViewTest.class
+PageObject/DeclarationAllowancesPage.class
+Testcases/DashboardApplyLeaveTest.class
+PageObject/DashboardCTCComponentPage.class
+PageObject/DocumentViewPage.class
+Testcases/DashboardCTCComponentTest.class
+PageObject/DashBoardApplyReimbursementPage.class
+Testcases/DashboardApplyReimbursementTest.class
+PageObject/DashboardAddAllowancesPage.class
+Testcases/LoginTest.class
+Testcases/BaseClass.class
+PageObject/LoginPage.class
+Testcases/DashboardAddAllowancesTest.class
+PageObject/DashBoardApplyLeavePage.class

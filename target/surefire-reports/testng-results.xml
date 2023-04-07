@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-07T02:48:51 IST" name="Mool_Vetan_Mobile" finished-at="2023-04-07T02:50:38 IST" duration-ms="107585">
+  <suite started-at="2023-04-07T14:15:06 IST" name="Mool_Vetan_Mobile" finished-at="2023-04-07T14:16:29 IST" duration-ms="83032">
     <groups>
     </groups>
-    <test started-at="2023-04-07T02:48:51 IST" name="Mool Mobile" finished-at="2023-04-07T02:50:38 IST" duration-ms="107585">
-      <class name="Testcases.DeclarationAllowancesPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Testcases.DeclarationAllowancesPageTest@4278a03f]" started-at="2023-04-07T02:48:51 IST" name="setup" finished-at="2023-04-07T02:49:07 IST" duration-ms="16390" status="PASS">
+    <test started-at="2023-04-07T14:15:06 IST" name="Mool Mobile" finished-at="2023-04-07T14:16:29 IST" duration-ms="83032">
+      <class name="Testcases.DeclarationTaxprojectionPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcases.DeclarationTaxprojectionPageTest@15b204a1]" started-at="2023-04-07T14:15:06 IST" name="setup" finished-at="2023-04-07T14:15:24 IST" duration-ms="17472" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="DeclarationAllowancesTest()[pri:0, instance:Testcases.DeclarationAllowancesPageTest@4278a03f]" started-at="2023-04-07T02:49:07 IST" name="DeclarationAllowancesTest" finished-at="2023-04-07T02:50:38 IST" duration-ms="90835" status="PASS">
+        <test-method signature="DeclarationTaxprojectionTest()[pri:0, instance:Testcases.DeclarationTaxprojectionPageTest@15b204a1]" started-at="2023-04-07T14:15:24 IST" name="DeclarationTaxprojectionTest" finished-at="2023-04-07T14:16:29 IST" duration-ms="65252" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DeclarationAllowancesTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Testcases.DeclarationAllowancesPageTest@4278a03f]" started-at="2023-04-07T02:50:38 IST" name="teardown" finished-at="2023-04-07T02:50:38 IST" duration-ms="338" status="PASS">
+        </test-method> <!-- DeclarationTaxprojectionTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Testcases.DeclarationTaxprojectionPageTest@15b204a1]" started-at="2023-04-07T14:16:29 IST" name="teardown" finished-at="2023-04-07T14:16:29 IST" duration-ms="282" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- Testcases.DeclarationAllowancesPageTest -->
+      </class> <!-- Testcases.DeclarationTaxprojectionPageTest -->
     </test> <!-- Mool Mobile -->
   </suite> <!-- Mool_Vetan_Mobile -->
 </testng-results>

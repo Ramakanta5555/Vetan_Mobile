@@ -1,10 +1,5 @@
 package Testcases;
 
-import java.awt.Scrollbar;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.WheelInput.ScrollOrigin;
 import org.testng.annotations.Test;
 
 import PageObject.DashboardCTCComponentPage;

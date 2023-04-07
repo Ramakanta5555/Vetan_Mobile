@@ -2,7 +2,9 @@ Testcases/DeclarationDeductionPageTest.class
 PageObject/DeclarationDeductionPage.class
 Testcases/DeclarationAllowancesPageTest.class
 Testcases/DocumentViewTest.class
+PageObject/DeclarationTaxprojectionPage.class
 PageObject/DeclarationAllowancesPage.class
+Testcases/DeclarationTaxprojectionPageTest.class
 Testcases/DashboardApplyLeaveTest.class
 PageObject/DashboardCTCComponentPage.class
 PageObject/DocumentViewPage.class

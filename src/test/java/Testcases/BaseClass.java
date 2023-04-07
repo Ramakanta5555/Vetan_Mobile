@@ -1,6 +1,12 @@
 package Testcases;
 
 import java.net.URL;
+import java.time.Duration;
+import java.util.Arrays;
+
+import org.openqa.selenium.interactions.PointerInput;
+import org.openqa.selenium.interactions.PointerInput.MouseButton;
+import org.openqa.selenium.interactions.PointerInput.Origin;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -8,23 +14,24 @@ import org.testng.annotations.BeforeClass;
 import PageObject.LoginPage;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import lombok.extern.slf4j.Slf4j;
 
 
+@Slf4j
 public class BaseClass {
 	
 
 	
-	AppiumDriver driver;
+	static AppiumDriver driver;
 	
 	
 	@BeforeClass
 	public void setup()
 	{
 		
+		// * Set Capabilities * //
 		try {
 		DesiredCapabilities caps = new DesiredCapabilities();
-		
-		
 		caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "ANDROID");
 		caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11.0");
 		caps.setCapability(MobileCapabilityType.DEVICE_NAME, "realme 6");
@@ -48,6 +55,7 @@ public class BaseClass {
 	
 	
 
+	// * Login Test *//
 	public void loginTest() throws InterruptedException
 	{
 		 LoginPage lp = new LoginPage(driver);
@@ -75,14 +83,24 @@ public class BaseClass {
 		 
 		 if(driver.getPageSource().contains("Abhisek Mohanty")) {
 			 
-			System.out.println("LoginTest Passed");
+			log.info("LoginTest Passed");
 		 }
 		 else
 		 {
-			 System.out.println("LoginTest Failed");
+			log.info("LoginTest Failed");
 		 }
 	}
-	
+
+
+
+	// *Function to click any where using X and Y cordinates * //
+	public void action_ClickOnPosition(int pointA_X, int pointA_Y)
+	{
+		PointerInput finger = new PointerInput(org.openqa.selenium.interactions.PointerInput.Kind.TOUCH, "finger"); 
+        org.openqa.selenium.interactions.Sequence clickPosition = new org.openqa.selenium.interactions.Sequence(finger, 1); 
+        clickPosition.addAction(finger.createPointerMove(Duration.ZERO, Origin.viewport(), pointA_X,pointA_Y)) .addAction(finger.createPointerDown(MouseButton.LEFT.asArg())) .addAction(finger.createPointerUp(MouseButton.LEFT.asArg())); 
+        driver.perform(Arrays.asList(clickPosition));
+	}
 	
 	@AfterClass
 	public void teardown()

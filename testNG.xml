@@ -7,7 +7,7 @@
 
 	<test name="Mool Mobile"> 
 			<classes>
-				<class name="Testcases.DeclarationAllowancesPageTest"></class>
+				<class name="Testcases.DeclarationTaxprojectionPageTest"></class>
 			</classes>
 	</test> 
 

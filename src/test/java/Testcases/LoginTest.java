@@ -1,7 +1,6 @@
 package Testcases;
 
-import java.net.URL;
-
+import org.junit.Assert;
 import org.testng.annotations.Test;
 
 import PageObject.LoginPage;
@@ -13,7 +12,8 @@ public class LoginTest extends BaseClass{
 	@Test
 	public void loginTest() throws InterruptedException
 	{
-			
+		
+		test = extent.createTest("AttendanceAndLeaveTest").assignAuthor("Ramakanta Samal").assignCategory("Regression").assignDevice("chrome 109.0.5414.119");
 		
 		 LoginPage lp = new LoginPage(driver);
 		 	
@@ -41,11 +41,15 @@ public class LoginTest extends BaseClass{
 		 
 		 if(driver.getPageSource().contains("Abhisek Mohanty")) {
 			 
-			
+			log.info("LoginTest Passed");
+			test.pass("LoginTest Passed");
+			Assert.assertTrue(true);
 		 }
 		 else
 		 {
-			 
+			 log.info("Error");
+			 test.fail("Error");
+			 Assert.assertTrue(false);
 		 }
 		 
 	}	 

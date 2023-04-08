@@ -1,7 +1,6 @@
 package Testcases;
 
 import org.testng.annotations.Test;
-
 import PageObject.DashBoardApplyLeavePage;
 import PageObject.LoginPage;
 
@@ -42,16 +41,15 @@ public class DashboardApplyLeaveTest extends BaseClass{
 		 {
 			 System.out.println("LoginTest Failed");
 		 }
-		 
-		 
+
 		 db.clickbtnRequestLeave();
 		 Thread.sleep(2000);
 		 
 		 db.clickbtnTypeOfLeave();
 		 Thread.sleep(2000);
 		 
-		 db.clickbtnTestLeave();
-		 Thread.sleep(2000);
+		 action_ClickOnPosition(169, 1020);
+        Thread.sleep(2000);
 		 
 		 db.clickbtnCalender();
 		 Thread.sleep(2000);

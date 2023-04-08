@@ -1,15 +1,26 @@
 package Testcases;
 
+import java.io.File;
+import java.io.IOException;
 import java.net.URL;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Arrays;
+import java.util.Date;
 
 import org.openqa.selenium.interactions.PointerInput;
 import org.openqa.selenium.interactions.PointerInput.MouseButton;
 import org.openqa.selenium.interactions.PointerInput.Origin;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import PageObject.LoginPage;
 import io.appium.java_client.AppiumDriver;
@@ -20,9 +31,28 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class BaseClass {
 	
-
-	
 	static AppiumDriver driver;
+	public static ExtentReports extent;
+    public static ExtentTest test;
+
+	@BeforeSuite
+	public void BeforeSuite() throws IOException
+	{
+		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());//time stamp
+		String repName="Test-Report-"+timeStamp+".html";
+		extent = new ExtentReports();
+      	String failedReportName = "FailedExtentReport";
+      	ExtentSparkReporter spark = new ExtentSparkReporter(System.getProperty("user.dir")+ "/test-output/extentReport/"+repName);
+      	ExtentSparkReporter failedspark = new ExtentSparkReporter(System.getProperty("user.dir")+ "/test-output/"+failedReportName).filter().statusFilter().as(new Status []{Status.FAIL}).apply();
+      	failedspark.config().setDocumentTitle("Failed Tests");
+      	// spark.config().setTheme(Theme.DARK);
+      	// spark.config().setDocumentTitle("Extent Report");
+      	// spark.config().setReportName("Extent Report");
+      	final File CONF = new File("extent-config.xml"); 
+      	spark.loadXMLConfig(CONF);
+		extent.attachReporter(spark, failedspark);
+
+	}
 	
 	
 	@BeforeClass
@@ -106,5 +136,11 @@ public class BaseClass {
 	public void teardown()
 	{
 		driver.quit();
+	}
+
+	@AfterSuite
+	public void afterSuite() throws IOException
+	{
+		extent.flush();
 	}
 }

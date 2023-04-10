@@ -5,11 +5,14 @@ import PageObject.DashboardAddAllowancesPage;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class DashboardAddAllowancesTest extends BaseClass{
+public class TC_DashboardAddAllowancesTest_001 extends BaseClass{
     
     @Test
     public void DashboardAddAllowancesTest() throws InterruptedException
     {
+
+        test = extent.createTest("DashboardAddAllowancesTest").assignAuthor("Ramakanta Samal").assignCategory("Regression").assignDevice("chrome 109.0.5414.119");
+
         DashboardAddAllowancesPage da = new DashboardAddAllowancesPage(driver);
 
         loginTest();

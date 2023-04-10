@@ -5,11 +5,14 @@ import PageObject.DocumentViewPage;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class DocumentViewTest extends BaseClass {
+public class TC_DocumentViewTest_001 extends BaseClass {
     
     @Test
     public void DocumentViewTest() throws InterruptedException
     {
+
+        test = extent.createTest("DocumentViewTest").assignAuthor("Ramakanta Samal").assignCategory("Regression").assignDevice("chrome 109.0.5414.119");
+
         DocumentViewPage dv = new DocumentViewPage(driver);
 
         loginTest();

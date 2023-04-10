@@ -7,7 +7,7 @@ import PageObject.LoginPage;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class LoginTest extends BaseClass{
+public class TC_LoginTest_001 extends BaseClass{
 	
 	@Test
 	public void loginTest() throws InterruptedException

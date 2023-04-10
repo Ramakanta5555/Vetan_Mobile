@@ -1,20 +1,22 @@
 package Testcases;
 
-import org.slf4j.Logger;
+
+import org.junit.Assert;
 import org.testng.annotations.Test;
 import PageObject.DashBoardApplyReimbursementPage;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class DashboardApplyReimbursementTest extends BaseClass{
+public class TC_DashboardApplyReimbursementTest_001 extends BaseClass{
 
 	
 	@Test
 	public void DashboardApplyReimbursementTest() throws InterruptedException
 	{
+		test = extent.createTest("DashboardApplyReimbursementTest").assignAuthor("Ramakanta Samal").assignCategory("Regression").assignDevice("chrome 109.0.5414.119");
+
 		DashBoardApplyReimbursementPage dr = new DashBoardApplyReimbursementPage(driver);
 		 
-
 		 loginTest();
 		 Thread.sleep(2000);
 
@@ -68,13 +70,16 @@ public class DashboardApplyReimbursementTest extends BaseClass{
 		 
 		 if (driver.getPageSource().contains("Applied Successfully")) {
 			
-			 
+			 log.info("Reimbursment Applied Successfully ");
+			 test.pass("Reimbursment Applied Successfully ");
+			 Assert.assertTrue(true);
 		}
 		 
 		 else
 		 {
-			 System.out.println("Error");
-			
+			 log.info("Unable to Apply Reimbursmenet");
+			 test.fail("Unable to Apply Reimbursmenet");
+			 Assert.assertTrue(false);
 		 }
 		 
 		 

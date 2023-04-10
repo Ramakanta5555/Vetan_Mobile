@@ -4,11 +4,13 @@ import org.testng.annotations.Test;
 import PageObject.DashBoardApplyLeavePage;
 import PageObject.LoginPage;
 
-public class DashboardApplyLeaveTest extends BaseClass{
+public class Tc_DashboardApplyLeaveTest_001 extends BaseClass{
 
 	@Test
 	public void DashboardApplyLeaveTest() throws InterruptedException
 	{
+		test = extent.createTest("DashboardApplyLeaveTest").assignAuthor("Ramakanta Samal").assignCategory("Regression").assignDevice("chrome 109.0.5414.119");
+
 		LoginPage lp = new LoginPage(driver);
 		DashBoardApplyLeavePage db = new DashBoardApplyLeavePage(driver);
 		

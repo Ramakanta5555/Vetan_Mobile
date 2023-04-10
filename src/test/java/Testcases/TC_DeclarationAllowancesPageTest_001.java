@@ -10,11 +10,13 @@ import PageObject.DeclarationAllowancesPage;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class DeclarationAllowancesPageTest extends BaseClass{
+public class TC_DeclarationAllowancesPageTest_001 extends BaseClass{
     
     @Test
     public void DeclarationAllowancesTest() throws InterruptedException
     {
+        test = extent.createTest("DeclarationAllowancesTest").assignAuthor("Ramakanta Samal").assignCategory("Regression").assignDevice("chrome 109.0.5414.119");
+
         DeclarationAllowancesPage da = new DeclarationAllowancesPage(driver);
 
         loginTest();

@@ -7,7 +7,7 @@ import io.appium.java_client.AppiumBy;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class DashboardCTCComponentTest extends BaseClass {
+public class TC_DashboardCTCComponentTest_001 extends BaseClass {
     
     @Test
     public void DashboardCTCComponentTest() throws InterruptedException
@@ -19,7 +19,7 @@ public class DashboardCTCComponentTest extends BaseClass {
         Thread.sleep(2000);
 
 
-        driver.findElement(new AppiumBy.ByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0))"+".scrollIntoView(new UiSelector()"+" .xpath(\"" + "//android.widget.ImageView[@content-desc=\"View breakdown\"]" + "\").instance(0))")).click();
+        driver.findElement(new AppiumBy.ByAndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0))"+".scrollIntoView(new UiSelector()"+" .xpath(\"" + "//android.widget.ImageView[@content-desc=\"View breakdown\"]" + "\"))")).click();
             
         // driver.findElement(By.xpath("//android.widget.ImageView[@content-desc=\"View breakdown\"]")).click();
 

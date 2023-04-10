@@ -5,10 +5,58 @@
 <suite name = "Mool_Vetan_Mobile" verbose="1">
 
 
+	<test name="Mool Mobile Dashboard Allowances"> 
+			<classes>
+				<class name="Testcases.TC_DashboardAddAllowancesTest_001"></class>
+			</classes>
+	</test> 
+	<test name="Mool Mobile DashBoard Apply Leave"> 
+			<classes>
+				<class name="Testcases.Tc_DashboardApplyLeaveTest_001"></class>
+			</classes>
+	</test> 
+	<test name="Mool Mobile Dashboard Apply Reimbursement"> 
+			<classes>
+				<class name="Testcases.TC_DashboardApplyReimbursementTest_001"></class>
+			</classes>
+	</test> 
+	<test name="Mool Mobile Declaration Allowances Page "> 
+			<classes>
+				<class name="Testcases.TC_DeclarationAllowancesPageTest_001"></class>
+			</classes>
+	</test> 
 	<test name="Mool Mobile"> 
 			<classes>
 				<class name="Testcases.ProfilePageTest"></class>
 			</classes>
 	</test> 
+	<test name="Mool Mobile Declaration General Make Declaration"> 
+			<classes>
+				<class name="Testcases.DeclarationGeneralMakeDeclarationTest"></class>
+			</classes>
+	</test> 
+	<test name="Mool Mobile Declaration Taxprojection "> 
+			<classes>
+				<class name="Testcases.TC_DeclarationTaxprojectionPageTest_001"></class>
+			</classes>
+	</test> 
+	<test name="Mool Mobile Document View Test"> 
+			<classes>
+				<class name="Testcases.TC_DocumentViewTest_001"></class>
+			</classes>
+	</test> 
+
+	<test name="Mool Mobile Attendance And Leave Page Test"> 
+			<classes>
+				<class name="Testcases.TC_AttendanceAndLeavePageTest_001"></class>
+			</classes>
+	</test> 
+	
+	<test name="Mool Mobile Profile Page Test"> 
+			<classes>
+				<class name="Testcases.TC_ProfilePageTest_001"></class>
+			</classes>
+	</test> 
+	
 
 </suite>

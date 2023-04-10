@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import PageObject.ProfilePage;
 import io.appium.java_client.AppiumBy;
 
-public class ProfilePageTest extends BaseClass{
+public class TC_ProfilePageTest_001 extends BaseClass{
     
     @Test
     public void ProfilePagePersonalInfoTest() throws InterruptedException

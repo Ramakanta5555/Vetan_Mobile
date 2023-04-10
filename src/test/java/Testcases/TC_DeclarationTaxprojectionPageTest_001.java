@@ -6,7 +6,7 @@ import PageObject.DeclarationTaxprojectionPage;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class DeclarationTaxprojectionPageTest extends BaseClass{
+public class TC_DeclarationTaxprojectionPageTest_001 extends BaseClass{
     
 
     @Test

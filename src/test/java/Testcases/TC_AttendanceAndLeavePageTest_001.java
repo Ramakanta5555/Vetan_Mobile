@@ -7,7 +7,7 @@ import PageObject.AttendanceAndLeavePage;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class AttendanceAndLeavePageTest extends BaseClass{
+public class TC_AttendanceAndLeavePageTest_001 extends BaseClass{
     
     @Test
     public void AttendanceAndLeaveTest() throws InterruptedException

@@ -8,12 +8,14 @@ import PageObject.DeclarationDeductionPage;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class DeclarationDeductionPageTest extends BaseClass {
+public class TC_DeclarationDeductionPageTest_001 extends BaseClass {
     
     
     
     public void DeclarationGeneralMakeDeclarationTest() throws InterruptedException
     {
+        test = extent.createTest("DeclarationGeneralMakeDeclarationTest").assignAuthor("Ramakanta Samal").assignCategory("Regression").assignDevice("chrome 109.0.5414.119");
+
         DeclarationDeductionPage dp = new DeclarationDeductionPage(driver);
 
         loginTest();

@@ -25,9 +25,9 @@
 				<class name="Testcases.TC_DeclarationAllowancesPageTest_001"></class>
 			</classes>
 	</test> 
-	<test name="Mool Mobile Declaration General Make Declaration"> 
+	<test name="Mool Mobile Declaration Deduction Page Test"> 
 			<classes>
-				<class name="Testcases.DeclarationGeneralMakeDeclarationTest"></class>
+				<class name="Testcases.TC_DeclarationDeductionPageTest_001"></class>
 			</classes>
 	</test> 
 	<test name="Mool Mobile Declaration Taxprojection "> 

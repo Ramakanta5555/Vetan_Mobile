@@ -40,8 +40,10 @@ public class TC_DocumentViewTest_001 extends BaseClass {
         if (driver.getPageSource().contains("January 2023") && driver.getPageSource().contains("December 2022") && driver.getPageSource().contains("2022-23") && driver.getPageSource().contains("Download")) {
             
             log.info("Financial year filter working successfully \n  We are on the Document Page of 2023-24");
+            test.pass("Financial year filter working successfully \n  We are on the Document Page of 2023-24");
         }else{
             log.info("Error");
+            test.fail("Error");
         }
 
        driver.navigate().back();
@@ -49,8 +51,10 @@ public class TC_DocumentViewTest_001 extends BaseClass {
        if (driver.getPageSource().contains("Abhisek Mohanty")) {
 
         log.info("We Are on the Dashboard");
+        test.pass("We Are on the Dashboard");
        } else {
          log.info("Error");
+         test.fail("Error");
        }
     }
 }

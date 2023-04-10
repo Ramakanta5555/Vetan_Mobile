@@ -1,9 +1,12 @@
 package Testcases;
 
+import org.junit.Assert;
 import org.testng.annotations.Test;
 import PageObject.DashBoardApplyLeavePage;
 import PageObject.LoginPage;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class Tc_DashboardApplyLeaveTest_001 extends BaseClass{
 
 	@Test
@@ -37,11 +40,15 @@ public class Tc_DashboardApplyLeaveTest_001 extends BaseClass{
 		 
 		 if(driver.getPageSource().contains("Abhisek Mohanty")) {
 			 
-			System.out.println("LoginTest Passed");
+			log.info("LoginTest Passed");
+			test.pass("LoginTest Passed");
+			Assert.assertTrue(true);
 		 }
 		 else
 		 {
-			 System.out.println("LoginTest Failed");
+			 log.info("LoginTest Failed");
+			 test.fail("LoginTest Failed");
+			 Assert.assertTrue(false);
 		 }
 
 		 db.clickbtnRequestLeave();
@@ -85,11 +92,13 @@ public class Tc_DashboardApplyLeaveTest_001 extends BaseClass{
 		 
 		 if (driver.getPageSource().contains("Successfully completed")) 
 		 {
-			System.out.println("Leave Applied Successfully");
+			log.info("Leave Applied Successfully");
+			test.pass("Leave Applied Successfully");
 		 }
 		 else
 		 {
-			System.out.println("Error");
+			log.info("Error");
+			test.fail("Error");
 		 }
 		 
 		 

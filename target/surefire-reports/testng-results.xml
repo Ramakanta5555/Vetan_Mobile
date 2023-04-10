@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-09T01:23:56 IST" name="Mool_Vetan_Mobile" finished-at="2023-04-09T01:26:13 IST" duration-ms="137322">
+  <suite started-at="2023-04-11T01:10:42 IST" name="Mool_Vetan_Mobile" finished-at="2023-04-11T01:13:03 IST" duration-ms="140521">
     <groups>
     </groups>
-    <test started-at="2023-04-09T01:23:56 IST" name="Mool Mobile" finished-at="2023-04-09T01:26:13 IST" duration-ms="137322">
-      <class name="Testcases.ProfilePageTest">
-        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:Testcases.ProfilePageTest@56de5251]" started-at="2023-04-09T01:23:56 IST" name="BeforeSuite" finished-at="2023-04-09T01:23:56 IST" duration-ms="108" status="PASS">
+    <test started-at="2023-04-11T01:10:42 IST" name="Mool Mobile Profile Page Test" finished-at="2023-04-11T01:13:03 IST" duration-ms="140521">
+      <class name="Testcases.TC_ProfilePageTest_001">
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:Testcases.TC_ProfilePageTest_001@1a04f701]" started-at="2023-04-11T01:10:42 IST" name="BeforeSuite" finished-at="2023-04-11T01:10:42 IST" duration-ms="115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeSuite -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Testcases.ProfilePageTest@56de5251]" started-at="2023-04-09T01:23:56 IST" name="setup" finished-at="2023-04-09T01:24:12 IST" duration-ms="16316" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcases.TC_ProfilePageTest_001@1a04f701]" started-at="2023-04-11T01:10:43 IST" name="setup" finished-at="2023-04-11T01:11:03 IST" duration-ms="20792" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="ProfilePagePersonalInfoTest()[pri:0, instance:Testcases.ProfilePageTest@56de5251]" started-at="2023-04-09T01:24:12 IST" name="ProfilePagePersonalInfoTest" finished-at="2023-04-09T01:26:13 IST" duration-ms="120676" status="PASS">
+        <test-method signature="ProfilePagePersonalInfoTest()[pri:0, instance:Testcases.TC_ProfilePageTest_001@1a04f701]" started-at="2023-04-11T01:11:03 IST" name="ProfilePagePersonalInfoTest" finished-at="2023-04-11T01:13:03 IST" duration-ms="119349" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProfilePagePersonalInfoTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Testcases.ProfilePageTest@56de5251]" started-at="2023-04-09T01:26:13 IST" name="teardown" finished-at="2023-04-09T01:26:13 IST" duration-ms="306" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Testcases.TC_ProfilePageTest_001@1a04f701]" started-at="2023-04-11T01:13:03 IST" name="teardown" finished-at="2023-04-11T01:13:03 IST" duration-ms="355" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Testcases.ProfilePageTest@56de5251]" started-at="2023-04-09T01:26:13 IST" name="afterSuite" finished-at="2023-04-09T01:26:14 IST" duration-ms="166" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Testcases.TC_ProfilePageTest_001@1a04f701]" started-at="2023-04-11T01:13:03 IST" name="afterSuite" finished-at="2023-04-11T01:13:03 IST" duration-ms="157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- Testcases.ProfilePageTest -->
-    </test> <!-- Mool Mobile -->
+      </class> <!-- Testcases.TC_ProfilePageTest_001 -->
+    </test> <!-- Mool Mobile Profile Page Test -->
   </suite> <!-- Mool_Vetan_Mobile -->
 </testng-results>

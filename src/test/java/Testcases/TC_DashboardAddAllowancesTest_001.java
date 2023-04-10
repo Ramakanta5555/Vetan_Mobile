@@ -1,5 +1,6 @@
 package Testcases;
 
+import org.junit.Assert;
 import org.testng.annotations.Test;
 import PageObject.DashboardAddAllowancesPage;
 import lombok.extern.slf4j.Slf4j;
@@ -48,8 +49,12 @@ public class TC_DashboardAddAllowancesTest_001 extends BaseClass{
         if (driver.getPageSource().contains("Successfully Uploaded!!")) {
             
             log.info("Allowances Added Successfully");
+            test.pass("Allowances Added Successfully");
+            Assert.assertTrue(true);
         } else {
             log.info("Error");
+            test.fail("Error");
+            Assert.assertTrue(false);
         }
     }
 }

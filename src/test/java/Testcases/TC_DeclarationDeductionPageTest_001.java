@@ -63,11 +63,12 @@ public class TC_DeclarationDeductionPageTest_001 extends BaseClass {
         if (driver.getPageSource().contains("Successfully updated!")) {
             
                 log.info("Declartion Added Successfully");
+                test.pass("Declartion Added Successfully");
 
         } else {
             
             log.info("Error");
-            log.info(driver.getPageSource());
+            test.fail("Error");
         }
 
         driver.navigate().back();
@@ -111,9 +112,11 @@ public class TC_DeclarationDeductionPageTest_001 extends BaseClass {
         if (driver.getPageSource().contains("Life Insurance Premium") && driver.getPageSource().contains("12,000 INR")) {
             
             log.info("Life Insurance Premium Declartion is visible on the View Declaration Page");
+            test.pass("Life Insurance Premium Declartion is visible on the View Declaration Page");
 
         } else {
             log.info("Error");
+            test.fail("Error");
         }
     }
 
@@ -177,11 +180,13 @@ public class TC_DeclarationDeductionPageTest_001 extends BaseClass {
         if (driver.getPageSource().contains("Successfully updated!")) {
             
             log.info("Proof uploaded Successfully");
+            test.pass("Proof uploaded Successfully");
 
         } else {
         
         log.info("Error");
-        log.info(driver.getPageSource());
+        test.fail("Error");
+       
     }
 
     }

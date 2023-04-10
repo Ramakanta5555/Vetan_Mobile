@@ -95,8 +95,10 @@ public class TC_DeclarationAllowancesPageTest_001 extends BaseClass{
 
         if (driver.getPageSource().contains("Data updated successfully!")) {
             log.info("HRA Updated Successfully");
+            test.pass("HRA Updated Successfully");
         } else {
             log.info("Error");
+            test.pass("Error");
         }
 
         driver.navigate().back();
@@ -119,9 +121,11 @@ public class TC_DeclarationAllowancesPageTest_001 extends BaseClass{
         if (driver.getPageSource().contains("33,000 INR") && driver.getPageSource().contains("Titu Mama") && driver.getPageSource().contains("UDUDU8383N")) {
 
             log.info("Updated HRA is visible on the HRA details screen");
+            test.pass("Updated HRA is visible on the HRA details screen");
 
         } else {
             log.info("Error");
+            test.fail("Error");
         }
         
     }

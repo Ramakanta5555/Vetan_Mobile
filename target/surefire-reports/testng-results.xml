@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-11T01:10:42 IST" name="Mool_Vetan_Mobile" finished-at="2023-04-11T01:13:03 IST" duration-ms="140521">
+  <suite started-at="2023-04-13T11:13:14 IST" name="Mool_Vetan_Mobile" finished-at="2023-04-13T11:14:29 IST" duration-ms="74753">
     <groups>
     </groups>
-    <test started-at="2023-04-11T01:10:42 IST" name="Mool Mobile Profile Page Test" finished-at="2023-04-11T01:13:03 IST" duration-ms="140521">
-      <class name="Testcases.TC_ProfilePageTest_001">
-        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:Testcases.TC_ProfilePageTest_001@1a04f701]" started-at="2023-04-11T01:10:42 IST" name="BeforeSuite" finished-at="2023-04-11T01:10:42 IST" duration-ms="115" status="PASS">
+    <test started-at="2023-04-13T11:13:14 IST" name="Mool Mobile Dashboard Allowances" finished-at="2023-04-13T11:14:29 IST" duration-ms="74753">
+      <class name="Testcases.TC_DashboardAddAllowancesTest_001">
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:Testcases.TC_DashboardAddAllowancesTest_001@309e345f]" started-at="2023-04-13T11:13:14 IST" name="BeforeSuite" finished-at="2023-04-13T11:13:14 IST" duration-ms="110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeSuite -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Testcases.TC_ProfilePageTest_001@1a04f701]" started-at="2023-04-11T01:10:43 IST" name="setup" finished-at="2023-04-11T01:11:03 IST" duration-ms="20792" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcases.TC_DashboardAddAllowancesTest_001@309e345f]" started-at="2023-04-13T11:13:14 IST" name="setup" finished-at="2023-04-13T11:13:36 IST" duration-ms="21950" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="ProfilePagePersonalInfoTest()[pri:0, instance:Testcases.TC_ProfilePageTest_001@1a04f701]" started-at="2023-04-11T01:11:03 IST" name="ProfilePagePersonalInfoTest" finished-at="2023-04-11T01:13:03 IST" duration-ms="119349" status="PASS">
+        <test-method signature="DashboardAddAllowancesTest()[pri:0, instance:Testcases.TC_DashboardAddAllowancesTest_001@309e345f]" started-at="2023-04-13T11:13:36 IST" name="DashboardAddAllowancesTest" finished-at="2023-04-13T11:14:28 IST" duration-ms="52448" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ProfilePagePersonalInfoTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Testcases.TC_ProfilePageTest_001@1a04f701]" started-at="2023-04-11T01:13:03 IST" name="teardown" finished-at="2023-04-11T01:13:03 IST" duration-ms="355" status="PASS">
+        </test-method> <!-- DashboardAddAllowancesTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Testcases.TC_DashboardAddAllowancesTest_001@309e345f]" started-at="2023-04-13T11:14:28 IST" name="teardown" finished-at="2023-04-13T11:14:29 IST" duration-ms="339" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Testcases.TC_ProfilePageTest_001@1a04f701]" started-at="2023-04-11T01:13:03 IST" name="afterSuite" finished-at="2023-04-11T01:13:03 IST" duration-ms="157" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Testcases.TC_DashboardAddAllowancesTest_001@309e345f]" started-at="2023-04-13T11:14:29 IST" name="afterSuite" finished-at="2023-04-13T11:14:29 IST" duration-ms="166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- Testcases.TC_ProfilePageTest_001 -->
-    </test> <!-- Mool Mobile Profile Page Test -->
+      </class> <!-- Testcases.TC_DashboardAddAllowancesTest_001 -->
+    </test> <!-- Mool Mobile Dashboard Allowances -->
   </suite> <!-- Mool_Vetan_Mobile -->
 </testng-results>

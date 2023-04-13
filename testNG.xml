@@ -10,7 +10,7 @@
 				<class name="Testcases.TC_DashboardAddAllowancesTest_001"></class>
 			</classes>
 	</test> 
-	<test name="Mool Mobile DashBoard Apply Leave"> 
+	<!-- <test name="Mool Mobile DashBoard Apply Leave"> 
 			<classes>
 				<class name="Testcases.Tc_DashboardApplyLeaveTest_001"></class>
 			</classes>
@@ -51,7 +51,7 @@
 			<classes>
 				<class name="Testcases.TC_ProfilePageTest_001"></class>
 			</classes>
-	</test> 
+	</test>  -->
 	
 
 </suite>

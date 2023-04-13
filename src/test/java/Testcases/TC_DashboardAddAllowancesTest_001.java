@@ -44,7 +44,7 @@ public class TC_DashboardAddAllowancesTest_001 extends BaseClass{
         Thread.sleep(2000);
 
         da.clickbtnSave();
-        Thread.sleep(3000);
+        Thread.sleep(2000);
 
         if (driver.getPageSource().contains("Successfully Uploaded!!")) {
             

@@ -1,33 +1,161 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-13T11:13:14 IST" name="Mool_Vetan_Mobile" finished-at="2023-04-13T11:14:29 IST" duration-ms="74753">
+  <suite started-at="2023-04-15T14:03:40 IST" name="Mool_Vetan_Mobile" finished-at="2023-04-15T14:16:28 IST" duration-ms="767339">
     <groups>
     </groups>
-    <test started-at="2023-04-13T11:13:14 IST" name="Mool Mobile Dashboard Allowances" finished-at="2023-04-13T11:14:29 IST" duration-ms="74753">
+    <test started-at="2023-04-15T14:03:40 IST" name="Mool Mobile Dashboard Allowances" finished-at="2023-04-15T14:04:48 IST" duration-ms="67999">
       <class name="Testcases.TC_DashboardAddAllowancesTest_001">
-        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:Testcases.TC_DashboardAddAllowancesTest_001@309e345f]" started-at="2023-04-13T11:13:14 IST" name="BeforeSuite" finished-at="2023-04-13T11:13:14 IST" duration-ms="110" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeSuite -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Testcases.TC_DashboardAddAllowancesTest_001@309e345f]" started-at="2023-04-13T11:13:14 IST" name="setup" finished-at="2023-04-13T11:13:36 IST" duration-ms="21950" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcases.TC_DashboardAddAllowancesTest_001@309e345f]" started-at="2023-04-15T14:03:40 IST" name="setup" finished-at="2023-04-15T14:03:59 IST" duration-ms="18160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="DashboardAddAllowancesTest()[pri:0, instance:Testcases.TC_DashboardAddAllowancesTest_001@309e345f]" started-at="2023-04-13T11:13:36 IST" name="DashboardAddAllowancesTest" finished-at="2023-04-13T11:14:28 IST" duration-ms="52448" status="PASS">
+        <test-method signature="DashboardAddAllowancesTest()[pri:0, instance:Testcases.TC_DashboardAddAllowancesTest_001@309e345f]" started-at="2023-04-15T14:03:59 IST" name="DashboardAddAllowancesTest" finished-at="2023-04-15T14:04:48 IST" duration-ms="49532" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DashboardAddAllowancesTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Testcases.TC_DashboardAddAllowancesTest_001@309e345f]" started-at="2023-04-13T11:14:28 IST" name="teardown" finished-at="2023-04-13T11:14:29 IST" duration-ms="339" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Testcases.TC_DashboardAddAllowancesTest_001@309e345f]" started-at="2023-04-15T14:04:48 IST" name="teardown" finished-at="2023-04-15T14:04:48 IST" duration-ms="293" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Testcases.TC_DashboardAddAllowancesTest_001@309e345f]" started-at="2023-04-13T11:14:29 IST" name="afterSuite" finished-at="2023-04-13T11:14:29 IST" duration-ms="166" status="PASS">
+      </class> <!-- Testcases.TC_DashboardAddAllowancesTest_001 -->
+    </test> <!-- Mool Mobile Dashboard Allowances -->
+    <test started-at="2023-04-15T14:04:49 IST" name="Mool Mobile DashBoard Apply Leave" finished-at="2023-04-15T14:05:56 IST" duration-ms="67592">
+      <class name="Testcases.Tc_DashboardApplyLeaveTest_001">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcases.Tc_DashboardApplyLeaveTest_001@3967e60c]" started-at="2023-04-15T14:04:49 IST" name="setup" finished-at="2023-04-15T14:05:04 IST" duration-ms="15672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DashboardApplyLeaveTest()[pri:0, instance:Testcases.Tc_DashboardApplyLeaveTest_001@3967e60c]" started-at="2023-04-15T14:05:04 IST" name="DashboardApplyLeaveTest" finished-at="2023-04-15T14:05:56 IST" duration-ms="51625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DashboardApplyLeaveTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Testcases.Tc_DashboardApplyLeaveTest_001@3967e60c]" started-at="2023-04-15T14:05:56 IST" name="teardown" finished-at="2023-04-15T14:05:56 IST" duration-ms="292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Testcases.Tc_DashboardApplyLeaveTest_001 -->
+    </test> <!-- Mool Mobile DashBoard Apply Leave -->
+    <test started-at="2023-04-15T14:05:56 IST" name="Mool Mobile Dashboard Apply Reimbursement" finished-at="2023-04-15T14:07:22 IST" duration-ms="85359">
+      <class name="Testcases.TC_DashboardApplyReimbursementTest_001">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcases.TC_DashboardApplyReimbursementTest_001@5cee5251]" started-at="2023-04-15T14:05:56 IST" name="setup" finished-at="2023-04-15T14:06:12 IST" duration-ms="15606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DashboardApplyReimbursementTest()[pri:0, instance:Testcases.TC_DashboardApplyReimbursementTest_001@5cee5251]" started-at="2023-04-15T14:06:12 IST" name="DashboardApplyReimbursementTest" finished-at="2023-04-15T14:07:21 IST" duration-ms="69455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DashboardApplyReimbursementTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Testcases.TC_DashboardApplyReimbursementTest_001@5cee5251]" started-at="2023-04-15T14:07:21 IST" name="teardown" finished-at="2023-04-15T14:07:22 IST" duration-ms="296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Testcases.TC_DashboardApplyReimbursementTest_001 -->
+    </test> <!-- Mool Mobile Dashboard Apply Reimbursement -->
+    <test started-at="2023-04-15T14:07:22 IST" name="Mool Mobile Declaration Allowances Page " finished-at="2023-04-15T14:09:06 IST" duration-ms="103988">
+      <class name="Testcases.TC_DeclarationAllowancesPageTest_001">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcases.TC_DeclarationAllowancesPageTest_001@363ee3a2]" started-at="2023-04-15T14:07:22 IST" name="setup" finished-at="2023-04-15T14:07:37 IST" duration-ms="15691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DeclarationAllowancesTest()[pri:0, instance:Testcases.TC_DeclarationAllowancesPageTest_001@363ee3a2]" started-at="2023-04-15T14:07:37 IST" name="DeclarationAllowancesTest" finished-at="2023-04-15T14:09:05 IST" duration-ms="88006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeclarationAllowancesTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Testcases.TC_DeclarationAllowancesPageTest_001@363ee3a2]" started-at="2023-04-15T14:09:05 IST" name="teardown" finished-at="2023-04-15T14:09:06 IST" duration-ms="290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Testcases.TC_DeclarationAllowancesPageTest_001 -->
+    </test> <!-- Mool Mobile Declaration Allowances Page  -->
+    <test started-at="2023-04-15T14:09:06 IST" name="Mool Mobile Declaration Deduction Page Test" finished-at="2023-04-15T14:10:29 IST" duration-ms="83057">
+      <class name="Testcases.TC_DeclarationDeductionPageTest_001">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcases.TC_DeclarationDeductionPageTest_001@47d90b9e]" started-at="2023-04-15T14:09:06 IST" name="setup" finished-at="2023-04-15T14:09:21 IST" duration-ms="15700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DeclarationGeneralSubmitProofTest()[pri:0, instance:Testcases.TC_DeclarationDeductionPageTest_001@47d90b9e]" started-at="2023-04-15T14:09:21 IST" name="DeclarationGeneralSubmitProofTest" finished-at="2023-04-15T14:10:29 IST" duration-ms="67038" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeclarationGeneralSubmitProofTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Testcases.TC_DeclarationDeductionPageTest_001@47d90b9e]" started-at="2023-04-15T14:10:29 IST" name="teardown" finished-at="2023-04-15T14:10:29 IST" duration-ms="318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Testcases.TC_DeclarationDeductionPageTest_001 -->
+    </test> <!-- Mool Mobile Declaration Deduction Page Test -->
+    <test started-at="2023-04-15T14:10:29 IST" name="Mool Mobile Declaration Taxprojection " finished-at="2023-04-15T14:11:48 IST" duration-ms="78859">
+      <class name="Testcases.TC_DeclarationTaxprojectionPageTest_001">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcases.TC_DeclarationTaxprojectionPageTest_001@6af93788]" started-at="2023-04-15T14:10:29 IST" name="setup" finished-at="2023-04-15T14:10:45 IST" duration-ms="15745" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DeclarationTaxprojectionTest()[pri:0, instance:Testcases.TC_DeclarationTaxprojectionPageTest_001@6af93788]" started-at="2023-04-15T14:10:45 IST" name="DeclarationTaxprojectionTest" finished-at="2023-04-15T14:11:47 IST" duration-ms="62792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeclarationTaxprojectionTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Testcases.TC_DeclarationTaxprojectionPageTest_001@6af93788]" started-at="2023-04-15T14:11:47 IST" name="teardown" finished-at="2023-04-15T14:11:48 IST" duration-ms="319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Testcases.TC_DeclarationTaxprojectionPageTest_001 -->
+    </test> <!-- Mool Mobile Declaration Taxprojection  -->
+    <test started-at="2023-04-15T14:11:48 IST" name="Mool Mobile Document View Test" finished-at="2023-04-15T14:12:43 IST" duration-ms="55507">
+      <class name="Testcases.TC_DocumentViewTest_001">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcases.TC_DocumentViewTest_001@6ef888f6]" started-at="2023-04-15T14:11:48 IST" name="setup" finished-at="2023-04-15T14:12:04 IST" duration-ms="15929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DocumentViewTest()[pri:0, instance:Testcases.TC_DocumentViewTest_001@6ef888f6]" started-at="2023-04-15T14:12:04 IST" name="DocumentViewTest" finished-at="2023-04-15T14:12:43 IST" duration-ms="39324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DocumentViewTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Testcases.TC_DocumentViewTest_001@6ef888f6]" started-at="2023-04-15T14:12:43 IST" name="teardown" finished-at="2023-04-15T14:12:43 IST" duration-ms="254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Testcases.TC_DocumentViewTest_001 -->
+    </test> <!-- Mool Mobile Document View Test -->
+    <test started-at="2023-04-15T14:12:43 IST" name="Mool Mobile Attendance And Leave Page Test" finished-at="2023-04-15T14:14:14 IST" duration-ms="90722">
+      <class name="Testcases.TC_AttendanceAndLeavePageTest_001">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcases.TC_AttendanceAndLeavePageTest_001@48e4374]" started-at="2023-04-15T14:12:43 IST" name="setup" finished-at="2023-04-15T14:12:59 IST" duration-ms="15610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="AttendanceAndLeaveTest()[pri:0, instance:Testcases.TC_AttendanceAndLeavePageTest_001@48e4374]" started-at="2023-04-15T14:12:59 IST" name="AttendanceAndLeaveTest" finished-at="2023-04-15T14:14:14 IST" duration-ms="74829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AttendanceAndLeaveTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Testcases.TC_AttendanceAndLeavePageTest_001@48e4374]" started-at="2023-04-15T14:14:14 IST" name="teardown" finished-at="2023-04-15T14:14:14 IST" duration-ms="281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Testcases.TC_AttendanceAndLeavePageTest_001 -->
+    </test> <!-- Mool Mobile Attendance And Leave Page Test -->
+    <test started-at="2023-04-15T14:14:14 IST" name="Mool Mobile Profile Page Test" finished-at="2023-04-15T14:16:28 IST" duration-ms="133693">
+      <class name="Testcases.TC_ProfilePageTest_001">
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:Testcases.TC_ProfilePageTest_001@70e8f8e]" started-at="2023-04-15T14:03:40 IST" name="BeforeSuite" finished-at="2023-04-15T14:03:40 IST" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Testcases.TC_ProfilePageTest_001@70e8f8e]" started-at="2023-04-15T14:14:14 IST" name="setup" finished-at="2023-04-15T14:14:30 IST" duration-ms="15658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ProfilePagePersonalInfoTest()[pri:0, instance:Testcases.TC_ProfilePageTest_001@70e8f8e]" started-at="2023-04-15T14:14:30 IST" name="ProfilePagePersonalInfoTest" finished-at="2023-04-15T14:16:27 IST" duration-ms="117695" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProfilePagePersonalInfoTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Testcases.TC_ProfilePageTest_001@70e8f8e]" started-at="2023-04-15T14:16:27 IST" name="teardown" finished-at="2023-04-15T14:16:28 IST" duration-ms="336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:Testcases.TC_ProfilePageTest_001@70e8f8e]" started-at="2023-04-15T14:16:28 IST" name="afterSuite" finished-at="2023-04-15T14:16:28 IST" duration-ms="183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- Testcases.TC_DashboardAddAllowancesTest_001 -->
-    </test> <!-- Mool Mobile Dashboard Allowances -->
+      </class> <!-- Testcases.TC_ProfilePageTest_001 -->
+    </test> <!-- Mool Mobile Profile Page Test -->
   </suite> <!-- Mool_Vetan_Mobile -->
 </testng-results>

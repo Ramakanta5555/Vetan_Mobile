@@ -1,6 +1,10 @@
 package Testcases;
+import java.time.Duration;
 
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import PageObject.DashboardAddAllowancesPage;
 import lombok.extern.slf4j.Slf4j;
@@ -11,7 +15,6 @@ public class TC_DashboardAddAllowancesTest_001 extends BaseClass{
     @Test
     public void DashboardAddAllowancesTest() throws InterruptedException
     {
-
         test = extent.createTest("DashboardAddAllowancesTest").assignAuthor("Ramakanta Samal").assignCategory("Regression").assignDevice("chrome 109.0.5414.119");
 
         DashboardAddAllowancesPage da = new DashboardAddAllowancesPage(driver);
@@ -45,6 +48,9 @@ public class TC_DashboardAddAllowancesTest_001 extends BaseClass{
 
         da.clickbtnSave();
         Thread.sleep(2000);
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        
 
         if (driver.getPageSource().contains("Successfully Uploaded!!")) {
             

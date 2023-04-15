@@ -104,8 +104,18 @@ public class TC_DeclarationAllowancesPageTest_001 extends BaseClass{
         driver.navigate().back();
         Thread.sleep(2000);
 
-        da.clickbtnHRA();
-        Thread.sleep(2000);
+        try
+        {
+            da.clickbtnHRA();
+            Thread.sleep(2000);
+        }
+        catch(StaleElementReferenceException e)
+        {
+            WebElement btnHra =  driver.findElement(By.xpath("//android.widget.ImageView[@content-desc=\"HRA\"]"));
+            btnHra.click();
+
+        }
+        
 
         try {
             da.clickbtnViewFullDetails();

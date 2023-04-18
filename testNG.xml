@@ -53,7 +53,7 @@
 			</classes>
 	</test> 
 
-	<test name="Mool Mobile Dashboard Allowances"> 
+	<test name="Mool Mobile Dashboard Component"> 
 			<classes>
 				<class name="Testcases.TC_DashboardCTCComponentTest_001"></class>
 			</classes>

@@ -19,6 +19,7 @@ public class TC_ProfilePageTest_001 extends BaseClass{
 
         loginTest();
         Thread.sleep(2000);
+        test.pass("Login Test Passed");
 
         action_ClickOnPosition(126, 270);
         Thread.sleep(2000);

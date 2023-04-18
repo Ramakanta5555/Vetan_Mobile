@@ -23,6 +23,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import PageObject.LoginPage;
+import Utilities.readConfig;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import lombok.extern.slf4j.Slf4j;
@@ -31,9 +32,12 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class BaseClass {
 	
-	static AppiumDriver driver;
+	public static AppiumDriver driver;
 	public static ExtentReports extent;
     public static ExtentTest test;
+	readConfig readconfig = new readConfig();
+	public String prodUserName = readconfig.getProdUserName();
+	public String prodPassword = readconfig.getProdPassword();
 
 	@BeforeSuite
 	public void BeforeSuite() throws IOException
@@ -68,6 +72,11 @@ public class BaseClass {
 		caps.setCapability(MobileCapabilityType.UDID, "HUEAUSIRD6FYPBEA");
 		caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
 		
+		// caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+		// caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Emulator");
+		// caps.setCapability(MobileCapabilityType.DEVICE_NAME, "/Users/ramakantasamal/Downloads/app-release.apk");
+		  
+		
 		caps.setCapability("appPackage", "com.moolfinance.app");
 		caps.setCapability("appActivity", "com.moolfinance.app.MainActivity");
 		
@@ -93,7 +102,7 @@ public class BaseClass {
 		 lp.clicktxtUsername();
 		 Thread.sleep(2000);
 		 
-		 lp.settxtUsername("zify1aa");
+		 lp.settxtUsername(prodUserName);
 		 Thread.sleep(2000);
 		 
 		 lp.clickbtnMoolLogo();
@@ -102,7 +111,7 @@ public class BaseClass {
 		 lp.clicktxtPassword();
 		 Thread.sleep(2000);
 		 
-		 lp.settxtPassword("Mool@2020");
+		 lp.settxtPassword(prodPassword);
 		 Thread.sleep(2000);
 		 
 		 lp.clickbtnMoolLogo();

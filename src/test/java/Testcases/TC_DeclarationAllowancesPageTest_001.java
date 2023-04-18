@@ -21,6 +21,7 @@ public class TC_DeclarationAllowancesPageTest_001 extends BaseClass{
 
         loginTest();
         Thread.sleep(2000);
+        test.pass("Login Test Passed");
 
         da.clickbtnDeclaration();
         Thread.sleep(2000);

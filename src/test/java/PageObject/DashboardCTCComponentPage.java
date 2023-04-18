@@ -26,6 +26,14 @@ public class DashboardCTCComponentPage {
             btnViewBreakDown.click();
         }
 
+        @FindBy(xpath = "//android.widget.Button[@content-desc=\"Modify Salary\"]")
+        @CacheLookup
+        WebElement btnModifySalary;
+
+        public void clickbtnModifySalary()
+        {
+            btnModifySalary.click();
+        }
 
         @FindBy(xpath = "//android.view.View[@content-desc=\"Show yearly breakdown\"]/android.widget.CheckBox")
         @CacheLookup

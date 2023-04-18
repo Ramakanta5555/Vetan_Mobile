@@ -20,6 +20,7 @@ public class TC_DeclarationDeductionPageTest_001 extends BaseClass {
 
         loginTest();
         Thread.sleep(2000);
+        test.pass("Login Test Passed");
 
         dp.clickbtnDeclaration();
         Thread.sleep(2000);

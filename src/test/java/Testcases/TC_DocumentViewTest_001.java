@@ -17,6 +17,7 @@ public class TC_DocumentViewTest_001 extends BaseClass {
 
         loginTest();
         Thread.sleep(2000);
+        test.pass("Login Test Passed");
 
         dv.clickbtnDocument();
         Thread.sleep(2000);

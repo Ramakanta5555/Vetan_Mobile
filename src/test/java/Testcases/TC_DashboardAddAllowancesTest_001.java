@@ -1,10 +1,6 @@
 package Testcases;
-import java.time.Duration;
 
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import PageObject.DashboardAddAllowancesPage;
 import lombok.extern.slf4j.Slf4j;
@@ -21,6 +17,7 @@ public class TC_DashboardAddAllowancesTest_001 extends BaseClass{
 
         loginTest();
         Thread.sleep(2000);
+        test.pass("Login Test Passed");
 
         da.clickbtnAddAllowances();
         Thread.sleep(2000);
@@ -47,19 +44,18 @@ public class TC_DashboardAddAllowancesTest_001 extends BaseClass{
         Thread.sleep(2000);
 
         da.clickbtnSave();
-        Thread.sleep(2000);
+        Thread.sleep(4000);
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        // System.out.println(driver.getPageSource());
         
-
-        if (driver.getPageSource().contains("Successfully Uploaded!!")) {
+        if (driver.getPageSource().contains("Successfully uploaded!!")) {
             
             log.info("Allowances Added Successfully");
             test.pass("Allowances Added Successfully");
             Assert.assertTrue(true);
         } else {
-            log.info("Error");
-            test.fail("Error");
+            log.info("Unable to Add Allowances");
+            test.fail("Unable to Add Allowances");
         }
     }
 }

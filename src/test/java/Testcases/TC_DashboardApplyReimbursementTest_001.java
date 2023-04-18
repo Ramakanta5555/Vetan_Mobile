@@ -19,6 +19,7 @@ public class TC_DashboardApplyReimbursementTest_001 extends BaseClass{
 		 
 		 loginTest();
 		 Thread.sleep(2000);
+		 test.pass("Login Test Passed");
 
 		 dr.clickbtnAddReimbursement();
 		 Thread.sleep(2000);

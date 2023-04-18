@@ -52,6 +52,14 @@
 				<class name="Testcases.TC_ProfilePageTest_001"></class>
 			</classes>
 	</test> 
+
+	<test name="Mool Mobile Dashboard Allowances"> 
+			<classes>
+				<class name="Testcases.TC_DashboardCTCComponentTest_001"></class>
+			</classes>
+	</test> 
+
+	TC_DashboardCTCComponentTest_001
 	
 
 </suite>

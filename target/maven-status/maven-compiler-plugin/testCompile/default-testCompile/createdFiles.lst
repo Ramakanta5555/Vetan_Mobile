@@ -14,6 +14,7 @@ Testcases/TC_DashboardAddAllowancesTest_001.class
 PageObject/ProfilePage.class
 PageObject/DashboardAddAllowancesPage.class
 Testcases/TC_AttendanceAndLeavePageTest_001.class
+Utilities/readConfig.class
 Testcases/TC_DeclarationTaxprojectionPageTest_001.class
 Testcases/BaseClass.class
 PageObject/LoginPage.class

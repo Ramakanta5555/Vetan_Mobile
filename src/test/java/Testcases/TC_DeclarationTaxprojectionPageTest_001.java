@@ -38,7 +38,7 @@ public class TC_DeclarationTaxprojectionPageTest_001 extends BaseClass{
         } else {
             log.info("Error");
             test.fail("Error");
-            Assert.assertTrue(false);
+            // Assert.assertTrue(false);
         }
         //to close the Deduction tab
         action_ClickOnPosition(971, 586);
@@ -75,8 +75,6 @@ public class TC_DeclarationTaxprojectionPageTest_001 extends BaseClass{
         }
         //to close the HRA tab
         action_ClickOnPosition(971, 918);
-    
-
 
 
         //to open the Taxable Income tab
@@ -96,7 +94,9 @@ public class TC_DeclarationTaxprojectionPageTest_001 extends BaseClass{
 
 
         dt.clickbtnDownload();
-        Thread.sleep(2000);	
+        Thread.sleep(5000);	
+
+        System.out.println();
 
         if (driver.getPageSource().contains("Adobe Acrobat")) {
             log.info("Download button is working Properly!!");

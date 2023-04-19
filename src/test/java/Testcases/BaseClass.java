@@ -43,7 +43,8 @@ public class BaseClass {
 	public void BeforeSuite() throws IOException
 	{
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());//time stamp
-		String repName="Test-Report-"+timeStamp+".html";
+		// String repName="Test-Report-"+timeStamp+".html";
+		String repName="VetanMobileTestReport"+".html";
 		extent = new ExtentReports();
       	String failedReportName = "FailedExtentReport";
       	ExtentSparkReporter spark = new ExtentSparkReporter(System.getProperty("user.dir")+ "/test-output/extentReport/"+repName);

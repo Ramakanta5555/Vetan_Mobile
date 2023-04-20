@@ -9,13 +9,13 @@
 			<classes>
 				<class name="Testcases.TC_DashboardAddAllowancesTest_001"></class>
 			</classes>
-	</test> 
+	</test>
 	<test name="Mool Mobile DashBoard Apply Leave"> 
 			<classes>
 				<class name="Testcases.Tc_DashboardApplyLeaveTest_001"></class>
 			</classes>
 	</test> 
-	<test name="Mool Mobile Dashboard Apply Reimbursement"> 
+	  <test name="Mool Mobile Dashboard Apply Reimbursement"> 
 			<classes>
 				<class name="Testcases.TC_DashboardApplyReimbursementTest_001"></class>
 			</classes>
@@ -52,12 +52,5 @@
 				<class name="Testcases.TC_ProfilePageTest_001"></class>
 			</classes>
 	</test> 
-
-	<!-- <test name="Mool Mobile Dashboard Component"> 
-			<classes>
-				<class name="Testcases.TC_DashboardCTCComponentTest_001"></class>
-			</classes>
-	</test>  -->
-	
 
 </suite>

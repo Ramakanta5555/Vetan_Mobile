@@ -18,7 +18,7 @@ public class TC_DashboardApplyReimbursementTest_001 extends BaseClass{
 		DashBoardApplyReimbursementPage dr = new DashBoardApplyReimbursementPage(driver);
 		 
 		 loginTest();
-		 Thread.sleep(2000);
+		 Thread.sleep(4000);
 		 test.pass("Login Test Passed");
 
 		 dr.clickbtnAddReimbursement();

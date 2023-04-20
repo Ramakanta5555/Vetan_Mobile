@@ -26,8 +26,8 @@ public class Tc_DashboardApplyLeaveTest_001 extends BaseClass{
 		 db.clickbtnTypeOfLeave();
 		 Thread.sleep(2000);
 		 
-		 action_ClickOnPosition(169, 1020);
-        Thread.sleep(2000);
+		action_ClickOnPosition(169, 1020);
+        Thread.sleep(5000);
 		 
 		 db.clickbtnCalender();
 		 Thread.sleep(2000);

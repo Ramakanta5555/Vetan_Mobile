@@ -1,9 +1,7 @@
 package Testcases;
 
-import org.junit.Assert;
 import org.testng.annotations.Test;
 import PageObject.DashBoardApplyLeavePage;
-import PageObject.LoginPage;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j

@@ -93,7 +93,7 @@ public class TC_DeclarationAllowancesPageTest_001 extends BaseClass{
         da.clickbtnSave();
         Thread.sleep(4000);
         
-
+        
         if (driver.getPageSource().contains("Data updated successfully!")) {
             log.info("HRA Updated Successfully");
             test.pass("HRA Updated Successfully");

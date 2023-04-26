@@ -45,7 +45,7 @@ public class DeclarationTaxprojectionPage {
         btnDownload.click();
     }
 
-    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ScrollView/android.widget.TabHost/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ScrollView/android.widget.LinearLayout/com.oplus.widget.OplusViewPager/com.android.internal.widget.RecyclerView/android.widget.LinearLayout[2]/android.widget.ImageView")
+    @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ScrollView/android.widget.TabHost/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ScrollView/android.widget.LinearLayout/com.oplus.widget.OplusViewPager/com.android.internal.widget.RecyclerView/android.widget.LinearLayout[3]/android.widget.ImageView")
     @CacheLookup
     WebElement btnAdobe;
 

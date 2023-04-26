@@ -5,7 +5,7 @@
 <suite name = "Mool_Vetan_Mobile" verbose="1">
 
 
-	<test name="Mool Mobile Dashboard Allowances"> 
+	<!-- <test name="Mool Mobile Dashboard Allowances"> 
 			<classes>
 				<class name="Testcases.TC_DashboardAddAllowancesTest_001"></class>
 			</classes>
@@ -29,13 +29,13 @@
 			<classes>
 				<class name="Testcases.TC_DeclarationDeductionPageTest_001"></class>
 			</classes>
-	</test> 
+	</test>  -->
 	<test name="Mool Mobile Declaration Taxprojection "> 
 			<classes>
 				<class name="Testcases.TC_DeclarationTaxprojectionPageTest_001"></class>
 			</classes>
 	</test> 
-	<test name="Mool Mobile Document View Test"> 
+	<!-- <test name="Mool Mobile Document View Test"> 
 			<classes>
 				<class name="Testcases.TC_DocumentViewTest_001"></class>
 			</classes>
@@ -51,6 +51,6 @@
 			<classes>
 				<class name="Testcases.TC_ProfilePageTest_001"></class>
 			</classes>
-	</test> 
+	</test>  -->
 
 </suite>

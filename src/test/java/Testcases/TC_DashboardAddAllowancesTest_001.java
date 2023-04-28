@@ -1,8 +1,16 @@
 package Testcases;
 
+import java.sql.Time;
+import java.time.Duration;
+
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import PageObject.DashboardAddAllowancesPage;
+import io.appium.java_client.functions.ExpectedCondition;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -47,6 +55,8 @@ public class TC_DashboardAddAllowancesTest_001 extends BaseClass{
         Thread.sleep(4000);
 
         // System.out.println(driver.getPageSource());
+       
+
         
         if (driver.getPageSource().contains("Successfully uploaded!!")) {
             

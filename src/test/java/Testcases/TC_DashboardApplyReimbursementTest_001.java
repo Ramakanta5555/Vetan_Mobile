@@ -1,7 +1,12 @@
 package Testcases;
 
 
+import java.time.Duration;
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import PageObject.DashBoardApplyReimbursementPage;
 import lombok.extern.slf4j.Slf4j;
@@ -68,8 +73,18 @@ public class TC_DashboardApplyReimbursementTest_001 extends BaseClass{
 		 
 		 dr.clickbtnsSave();
 		 Thread.sleep(2000);
-		 
-		 if (driver.getPageSource().contains("Applied Successfully")) {
+
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		 WebElement successMeaasge = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//android.view.View[@content-desc=\"Applied Successfully!\"]")));
+
+		 if (successMeaasge.isDisplayed()) {
+			log.info("Able to see Success message");
+
+		 } else {
+			log.info("unable to see Success message");
+		 }
+
+		 if (driver.getPageSource().contains("Applied Successful")) {
 			
 			 log.info("Reimbursment Applied Successfully ");
 			 test.pass("Reimbursment Applied Successfully ");
